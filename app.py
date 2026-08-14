@@ -34,7 +34,9 @@ def main():
 
     # Build and send the email (cap at 10 events for readability)
     email_html = build_concert_email_html(events[:10])
-    subject = f"Concert Radar: {len(events)} show(s) for you"
+    #include target location in subject line so it's clear at glance where the shows are
+    location=config.TARGET_CITY or config.TARGET_STATE or "your area"
+    subject = f"Concert Radar: {len(events)} show(s) in {location}"
 
     success = send_email(
         to_address=config.NOTIFICATION_TO_ADDRESS,

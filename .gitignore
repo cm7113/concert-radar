@@ -216,3 +216,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+#concert Radar project-specific
+.env
+.venv/
+*.db
+.DS_Store

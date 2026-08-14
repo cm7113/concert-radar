@@ -84,8 +84,3 @@ Run tests:
 pytest
 ```
 
-The test suite uses mocked API responses via `pytest-mock`, so tests run instantly without consuming your Ticketmaster rate limit or sending real emails.
-
-## Continuous Integration
-
-Every push to `main` and every pull request automatically triggers the full test suite via GitHub Actions. See `.github/workflows/tests.yml` for the workflow configuration. The build status badge at the top of this README reflects the latest run.

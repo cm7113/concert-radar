@@ -1,7 +1,5 @@
 # Concert Radar
 
-![Tests](https://github.com/cm7113/concert-radar/workflows/Tests/badge.svg)
-
 A Python application that sends email alerts when your favorite artists announce concerts in your state. Concert Radar queries the Ticketmaster Discovery API for upcoming shows by a user-defined list of artists, filters results by location, and delivers a formatted HTML email summary containing venue details, dates, prices, and direct ticket purchase links.
 
 ## Setup
